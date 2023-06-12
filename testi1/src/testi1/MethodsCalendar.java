@@ -27,11 +27,11 @@ public class MethodsCalendar {
         }
 
         LocalDate myDate = LocalDate.of(b, c, 1);
-        System.out.println(" Ma   Ti   Ke   To   Pe   La   Su");
+        System.out.println(" Ma Ti Ke To Pe La Su");
 
         int dayOfWeek = myDate.getDayOfWeek().getValue();
         for (int i = 1; i < dayOfWeek; i++) {
-            System.out.print("     ");
+            System.out.print(" ");
         }
 
         int daysInMonth = myDate.lengthOfMonth();
