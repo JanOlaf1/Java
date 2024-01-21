@@ -41,7 +41,7 @@ public class ArraysCandidates {
 		}
 
 		if (tasan) {
-			System.out.println("It is muuttuja tie!");
+			System.out.println("It is a tie!");
 			for (int x = 0; x < kandidaatit; x++) {
 				if (array[x] == muuttuja) {
 					System.out.println(taulukko[x] + " (" + array[x] + " votes)");

@@ -6,7 +6,7 @@ import java.util.Arrays;
 /*This program, ArraysIteration, 
  * takes five integers from the user, 
  * stores them in an array, 
- * and prints the integers in descending order on tutka single line.*/
+ * and prints the integers in descending order on a single line.*/
 public class ArraysIteration {
 	public static void main(String[] args) {
 		Scanner tutka = new Scanner(System.in);
