@@ -1,11 +1,18 @@
 package testi1;
 
+import java.util.Scanner;
+
 import java.text.DecimalFormat;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class ArraysLibrary {
 	public static void main(String[] args) {
+		/*
+		 * /* ArraysLibrary program calculates descriptive statistics for an array of
+		 * integers. It prompts the user to input the number of values, takes integer
+		 * inputs, calculates minimum, maximum, mean, median, and sample standard
+		 * deviation, and prints the results along with the sample data.
+		 */
 		Scanner numerot = new Scanner(System.in);
 		System.out.print("Enter the number of values: ");
 		int annettu_numero = numerot.nextInt();
@@ -16,55 +23,55 @@ public class ArraysLibrary {
 			return;
 		}
 
-		int[] d = new int[annettu_numero];
-		double o = 0;
+		int[] taulukko = new int[annettu_numero];
+		double muuttuja = 0;
 		for (int c = 0; c < annettu_numero; c++) {
 			System.out.print("Enter an integer: ");
-			int e = numerot.nextInt();
-			o += e;
-			d[c] = e;
+			int integeri = numerot.nextInt();
+			muuttuja += integeri;
+			taulukko[c] = integeri;
 		}
 
-		Arrays.sort(d);
+		Arrays.sort(taulukko);
 		DecimalFormat unocomprende = new DecimalFormat("0.0");
-		int f = min(d);
-		int m = max(d);
-		double s = o / annettu_numero;
-		double median = median(d);
-		double standardDeviation = standardDeviation(d);
+		int minimi = min(taulukko);
+		int maksimi = max(taulukko);
+		double keski = muuttuja / annettu_numero;
+		double median = median(taulukko);
+		double standardDeviation = standardDeviation(taulukko);
 
 		System.out.println();
 		System.out.println("n = " + annettu_numero);
-		System.out.println("Min: " + f);
-		System.out.println("Max: " + m);
-		System.out.println("Mean: " + unocomprende.format(s));
+		System.out.println("Min: " + minimi);
+		System.out.println("Max: " + maksimi);
+		System.out.println("Mean: " + unocomprende.format(keski));
 		System.out.println("Median: " + unocomprende.format(median));
 		System.out.println("Sample standard deviation: " + unocomprende.format(standardDeviation));
 		System.out.print("Sample data: ");
 		for (int i = 0; i < annettu_numero; i++) {
-			System.out.print(d[i] + " ");
+			System.out.print(taulukko[i] + " ");
 		}
 		numerot.close();
 	}
 
 	public static int min(int[] g) {
-		int f = g[0];
+		int minimi = g[0];
 		for (int i = 1; i < g.length; i++) {
-			if (g[i] < f) {
-				f = g[i];
+			if (g[i] < minimi) {
+				minimi = g[i];
 			}
 		}
-		return f;
+		return minimi;
 	}
 
 	public static int max(int[] h) {
-		int m = h[0];
+		int maksimi = h[0];
 		for (int i = 1; i < h.length; i++) {
-			if (h[i] > m) {
-				m = h[i];
+			if (h[i] > maksimi) {
+				maksimi = h[i];
 			}
 		}
-		return m;
+		return maksimi;
 	}
 
 	public static double median(int[] z) {
