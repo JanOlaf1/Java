@@ -1,4 +1,2 @@
-# Java
-These are Java Basics programs that I've worked on during my free time and at school.
-Wishing you a great day,
-Jan
+These are basic single files Java programs that I worked on during my free time and at school as an introduction to coding. Over the past year, as I've continued learning and expanding my skills, I've realized that many of my GitHub projects could benefit from improved clarity and better organization at the root structure level.  I've also had multiple thoughts about adding more comments to the code to make it easier for others (and myself) to understand the logic behind each implementation. Which is one of the many things that i've focused on my current projects.
+
