@@ -1,6 +1,6 @@
 # Java Basics Projects
 
-![image](https://github.com/user-attachments/assets/54c8ef14-e132-43bb-8fcb-6887114d4615)
+<img src="https://github.com/user-attachments/assets/54c8ef14-e132-43bb-8fcb-6887114d4615" alt="image" width="300"/>
 
 
 ## Overview
